@@ -4,6 +4,8 @@ const wss = new WebSocket.Server({ port: 8080 });
 
 const clients = [];
 
+console.log('\nServer started');
+
 wss.on('connection', function connection(ws) {
     clients.push(ws);
 
